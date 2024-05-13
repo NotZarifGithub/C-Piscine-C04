@@ -6,7 +6,7 @@
 /*   By: mabd-ram <mabd-ram@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/08 14:10:59 by mabd-ram          #+#    #+#             */
-/*   Updated: 2024/05/12 15:33:19 by mabd-ram         ###   ########.fr       */
+/*   Updated: 2024/05/13 13:45:31 by mabd-ram         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,9 @@
 
 void	ft_putnbr(int nb)
 {
-	if (nb == -2147483648)	
+	char	number;
+
+	if (nb == -2147483648)
 	{
 		write(1, "-2", 2);
 		nb = 147483648;
@@ -25,10 +27,9 @@ void	ft_putnbr(int nb)
 		nb = nb * -1;
 	}
 	if (nb > 9)
-		ft_putnbr(nb /10);
-
-	char number = nb % 10 + '0';
-	write(1 , &number, 1);
+		ft_putnbr(nb / 10);
+	number = nb % 10 + '0';
+	write(1, &number, 1);
 }
 
 /*

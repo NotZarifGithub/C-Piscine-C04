@@ -6,7 +6,7 @@
 /*   By: mabd-ram <mabd-ram@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/08 12:41:08 by mabd-ram          #+#    #+#             */
-/*   Updated: 2024/05/08 14:08:43 by mabd-ram         ###   ########.fr       */
+/*   Updated: 2024/05/13 13:41:36 by mabd-ram         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putstr(char *str)
 {
-	int i;	
+	int	i;	
 
 	i = 0;
 	while (str[i] != '\0')
@@ -23,3 +23,13 @@ void	ft_putstr(char *str)
 		i++;
 	}
 }
+
+/*
+int main() {
+    char str[] = "Kanye West";
+    
+    ft_putstr(str);
+    
+    return 0;
+}
+*/
