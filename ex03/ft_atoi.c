@@ -6,7 +6,7 @@
 /*   By: mabd-ram <mabd-ram@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 15:36:44 by mabd-ram          #+#    #+#             */
-/*   Updated: 2024/05/13 14:22:02 by mabd-ram         ###   ########.fr       */
+/*   Updated: 2024/05/13 14:24:25 by mabd-ram         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int	ft_atoi(char *str)
 	i = 0;
 	sign = 1;
 	ans = 0;
-	skipWhitespaces(str, &i);
+	skipwhitespaces(str, &i);
 	if (str[i] == '+' || str[i] == '-')
 	{
 		if (str[i] == '-')
